@@ -4,6 +4,6 @@ from rest_framework.response import Response
 
 # Create your views here.
 
-class HelleAuthViev(generics.GenericAPIView):
+class HelloAuthView(generics.GenericAPIView):
     def get(self, request, *args, **kwargs):
         return Response(data={'message': 'Hello, world!'}, status=status.HTTP_200_OK)
